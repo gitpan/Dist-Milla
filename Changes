@@ -1,0 +1,67 @@
+Revision history for Dist::Milla
+
+v0.9.0  2013-03-27 01:36:14 PDT
+        - Initial release on CPAN
+
+v0.1.18  2013-03-27 00:22:00 PDT
+        - Run the initial build to get build & META in git
+        - Add Dist::Zilla version to generated_by
+        - Bump Git::Init dependency
+
+v0.1.17  2013-03-26 15:58:26 PDT
+        - Advertize Milla in generated_by META data
+
+v0.1.16  2013-03-26 12:33:57 PDT
+        - Extract ReversionOnRelease
+        - Up Perl dependency to 5.8.5
+
+v0.1.15  2013-03-26 10:43:04 PDT
+        - Properly support subclassing Dist::Zilla::App (rjbs++)
+
+v0.1.14  2013-03-26 02:30:15 PDT
+        - Add .gitignore and .travis.yml in Minting
+
+v0.1.13  2013-03-26 02:11:32 PDT
+        - Add milla command wrapper for new and install
+
+v0.1.12  2013-03-25 14:17:06 PDT
+        - Internal
+
+v0.1.11  2013-03-25 01:28:53 PDT
+        - Keep the empty line in reversion
+
+v0.1.10  2013-03-24 23:30:00 PDT
+        - Added 'script' dir to ExecDir
+
+v0.1.9  2013-03-24 23:00:35 PDT
+        - Added LicenseFromModule
+        - Added a bit more verbose logging in ReversionOnRelease
+
+v0.1.8  2013-03-24 17:29:35 PDT
+        - Allow README to be dirty
+        - Added prompt to ReversionOnRelease
+
+v0.1.7  2013-03-23 23:13:36 PDT
+        - Separate NameFromDirectory as a CPAN module
+
+v0.1.6  2013-03-23 20:46:35 PDT
+        - Change header for the next release
+
+v0.1.5    2013-03-23 20:33:34 America/Los_Angeles
+        - Support FAKE_RELEASE environment variable
+        - Add installer option
+        
+v0.1.4    2013-03-22 17:04:58 America/Los_Angeles
+        - Internal
+
+v0.1.3    2013-03-22 16:19:50 America/Los_Angeles
+        - Internal
+
+v0.1.2    2013-03-22 16:03:24 America/Los_Angeles
+        - Internal
+
+v0.1.1    2013-03-22 15:56:28 America/Los_Angeles
+        - Debugging
+
+v0.1.0    2013-03-22 15:47:25 America/Los_Angeles
+        - original version
