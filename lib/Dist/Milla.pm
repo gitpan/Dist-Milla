@@ -1,7 +1,7 @@
 package Dist::Milla;
 
 use strict;
-use version; our $VERSION = version->declare('v0.9.0');
+use version; our $VERSION = version->declare('v0.9.1');
 
 1;
 __END__
@@ -66,28 +66,28 @@ what you need.
 
 =head1 GETTING STARTED
 
-    # First time only
-    > cpanm Dist::Milla
-    > milla setup
+  # First time only
+  > cpanm Dist::Milla
+  > milla setup
 
-    # Make a new distribution
-    > milla new Dist-Name
-    > cd Dist-Name
+  # Make a new distribution
+  > milla new Dist-Name
+  > cd Dist-Name
 
-    # Init your git
-    > git init && git add . && git commit -m "initial commit"
+  # git is already initialized and files are added for you
+  > git commit -m "initial commit"
 
-    # Hack your code!
-    > $EDITOR lib/Dist/Name.pm t/dist-name.t cpanfile
+  # Hack your code!
+  > $EDITOR lib/Dist/Name.pm t/dist-name.t cpanfile
 
-    # (Optional; First time only) Make your build: This will get some boilerplate for git
-    > milla build
-    > git add Build.PL META.json README.md && git commit -m "git stuff"
+  # (Optional; First time only) Make your build: This will get some boilerplate for git
+  > milla build
+  > git add Build.PL META.json README.md && git commit -m "git stuff"
 
-    # Done? Test and release it!
-    > $EDITOR Changes
-    > milla build
-    > milla release
+  # Done? Test and release it!
+  > $EDITOR Changes
+  > milla build
+  > milla release
 
 It's that easy.
 
@@ -202,7 +202,7 @@ B<It's just you who has to install Milla>.
 
 Dist::Zilla has a lot of plugins to search from, and it's so easy for
 you to spend a few days until you settle with the configuration you
-need. B<That is absolutely true and why Milla exsits>.
+need. B<That is exactly why Milla exsits>.
 
 If you have tried Dist::Zilla before, you might have shared the same
 experience with me, where the default Basic profile doesn't do
