@@ -1,6 +1,6 @@
 requires 'perl', 5.008_005;
 
-requires 'Dist::Zilla', 4.300025;
+requires 'Dist::Zilla', 4.300032;
 requires 'Module::CPANfile', 0.9025;
 
 requires 'Dist::Zilla::Plugin::CheckChangesHasContent';
@@ -32,3 +32,7 @@ requires 'Dist::Zilla::Plugin::UploadToCPAN';
 requires 'Dist::Zilla::Plugin::VersionFromModule';
 requires 'Dist::Zilla::Role::PluginBundle::Config::Slicer';
 requires 'Dist::Zilla::PluginBundle::Git';
+
+on test => sub {
+    requires 'Test::More', '0.86';
+};
