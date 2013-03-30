@@ -8,12 +8,20 @@ build_requires:
 configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Milla version v0.9.1, Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.130880'
+generated_by: 'Dist::Milla version v0.9.2, Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Dist-Milla
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
 requires:
   Dist::Zilla: 4.300032
   Dist::Zilla::Plugin::CheckChangesHasContent: 0
@@ -51,4 +59,4 @@ resources:
   bugtracker: https://github.com/miyagawa/Dist-Milla/issues
   homepage: https://github.com/miyagawa/Dist-Milla
   repository: https://github.com/miyagawa/Dist-Milla.git
-version: v0.9.2
+version: v0.9.3
