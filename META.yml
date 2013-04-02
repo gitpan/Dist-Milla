@@ -8,7 +8,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Milla version v0.9.3, Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.130880'
+generated_by: 'Dist::Milla version v0.9.4, Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -46,7 +46,7 @@ requires:
   Dist::Zilla::Plugin::Prereqs::FromCPANfile: 0
   Dist::Zilla::Plugin::ReadmeAnyFromPod: 0
   Dist::Zilla::Plugin::ReadmeFromPod: 0
-  Dist::Zilla::Plugin::ReversionOnRelease: 0
+  Dist::Zilla::Plugin::ReversionOnRelease: 0.03
   Dist::Zilla::Plugin::ShareDir: 0
   Dist::Zilla::Plugin::Test::Compile: 0
   Dist::Zilla::Plugin::TestRelease: 0
@@ -60,4 +60,4 @@ resources:
   bugtracker: https://github.com/miyagawa/Dist-Milla/issues
   homepage: https://github.com/miyagawa/Dist-Milla
   repository: https://github.com/miyagawa/Dist-Milla.git
-version: v0.9.4
+version: v0.9.5
