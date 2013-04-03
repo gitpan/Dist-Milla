@@ -14,7 +14,7 @@ requires 'Dist::Zilla::Plugin::Git::Init', '2.012'; # commit = 0
 requires 'Dist::Zilla::Plugin::Git::GatherDir';
 requires 'Dist::Zilla::Plugin::GithubMeta';
 requires 'Dist::Zilla::Plugin::License';
-requires 'Dist::Zilla::Plugin::LicenseFromModule';
+requires 'Dist::Zilla::Plugin::LicenseFromModule', 0.02; # override_author = 1
 requires 'Dist::Zilla::Plugin::Manifest';
 requires 'Dist::Zilla::Plugin::MetaJSON';
 requires 'Dist::Zilla::Plugin::MetaYAML';
@@ -35,5 +35,5 @@ requires 'Dist::Zilla::Role::PluginBundle::Config::Slicer';
 requires 'Dist::Zilla::PluginBundle::Git';
 
 on test => sub {
-    requires 'Test::More', '0.86';
+    requires 'Test::More', '0.88';
 };
