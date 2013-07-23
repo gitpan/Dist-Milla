@@ -14,13 +14,13 @@ has installer => (
 
 sub build_file {
     my $self = shift;
-    $self->installer eq 'MakeMaker' ? 'Makefile.PL' : 'Build.PL';
+    $self->installer =~ /MakeMaker/ ? 'Makefile.PL' : 'Build.PL';
 }
 
 sub configure {
     my $self = shift;
 
-    my @accepts = qw( MakeMaker ModuleBuild ModuleBuildTiny );
+    my @accepts = qw( MakeMaker MakeMaker::IncShareDir ModuleBuild ModuleBuildTiny );
     my %accepts = map { $_ => 1 } @accepts;
 
     unless ($accepts{$self->installer}) {
@@ -92,7 +92,7 @@ sub configure {
             allow_dirty_match => '\.pm$', # .pm files copied back from Release
         } ],
         [ 'Git::Tag', { tag_format => '%v', tag_message => '' } ],
-        [ 'Git::Push' ],
+        [ 'Git::Push', { remotes_must_exist => 0 } ],
 
     );
 }
