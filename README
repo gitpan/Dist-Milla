@@ -32,6 +32,7 @@ CONVENTIONS
 
     Your module is Pure Perl, and files are stored in "lib"
     Your executable file is in "script" directory, if any
+    Your dist sharedirs must be in "share" directory, if any
     Your module is maintained with Git and "git ls-files" matches with what
     you will release
     Your module has a static list of prerequisites that can be described in
@@ -79,7 +80,7 @@ WHY Dist::Zilla
     love it, then you can stop reading this, or even using this module at
     all.
 
-    If you heard of dzil and think it's overkill or doesn't work for yor
+    If you heard of dzil and think it's overkill or doesn't work for your
     module, this is why Milla exists.
 
     If you have tried dzil ages ago and thought it was slow, or couldn't
@@ -97,8 +98,8 @@ WHY Dist::Zilla
 
     That said, I myself have avoided switching to Dist::Zilla for a long
     time for some reason. I actually tried a couple of times, but ended up
-    giving up to swithing it. You can google for "Hate Dist::Zilla" and will
-    be able to find similarly frustrated developers.
+    giving up switching to it. You can google for "Hate Dist::Zilla" and
+    will be able to find similarly frustrated developers.
 
     In my observation, typical problems/dislikes around Dist::Zilla can be
     categorized into one of the following thoughts.
@@ -163,12 +164,12 @@ WHY Dist::Zilla
     Dist::Zilla isn't just worth it
         Dist::Zilla has a lot of plugins to search from, and it's so easy
         for you to spend a few days until you settle with the configuration
-        you need. That is exactly why Milla exsits.
+        you need. That is exactly why Milla exists.
 
         If you have tried Dist::Zilla before, you might have shared the same
         experience with me, where the default Basic profile doesn't do much.
         And when you started wondering what other authors are doing, you
-        would be overwhelmed by the amount of plugins and complexicy
+        would be overwhelmed by the amount of plugins and complexity
         introduced by the clever workflow.
 
         Milla provides a sensible set of defaults that will work for 90% of
@@ -186,8 +187,8 @@ WHY Dist::Zilla
 
 FAQ
    So you basically wrote a simple PluginBundle and some wrapper, and give that a name?
-    Yes. That's the whole point. Think Dist::Zila as a framework (because it
-    is!) and Milla is a (thin) application built on top of that.
+    Yes. That's the whole point. Think Dist::Zilla as a framework (because
+    it is!) and Milla is a (thin) application built on top of that.
 
    That's so egoistic for you! Why not just Dist::Zilla::PluginBundle::Author::MIYAGAWA?
     Part of the reason might be my egoism. But think about it - if I
@@ -210,7 +211,7 @@ FAQ
     I agree that it is still overkill. But as of this writing, there's no
     software other than Dist::Zilla that can correctly create a CPAN style
     distribution other than ExtUtils::MakeMaker and Module::Build, and I
-    think they're wrong tool for *authoring* distributions.
+    think they're wrong tools for *authoring* distributions.
 
     Check out Minilla if you think Dist::Zilla is overkill and want a
     lightweight replacement that does the same thing.
@@ -237,7 +238,7 @@ CONTRIBUTORS
 
     Tokuhiro Matsuno has beaten me to writing Minilla, which resulted in me
     going the Dist::Zilla plugin route. Minilla is a sister project, and we
-    try to make them compatible to each other and makes it as trivial as
+    try to make them compatible to each other and make it as trivial as
     possible to switch from/to each other.
 
 COPYRIGHT
